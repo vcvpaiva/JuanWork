@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank>
+  <!-- tokens means "surface tokens", e.g. Spanish "vámonos" counts as one token
+       words means "syntactic words", e.g. Spanish "vámonos" is split to two words, "vamos" and "nos"
+       fused is the number of tokens that are split to two or more syntactic words
+       The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
+  <size>
+    <total><sentences>558</sentences><tokens>7035</tokens><words>7035</words><fused>0</fused></total>
+  </size>
+  <lemmas unique="595" /><!-- ., of, the, be, a, we, category, to, in, this, and, ,, give, -, result -->
+  <forms unique="700" /><!-- ., of, the, a, we, to, is, in, this, categories, are, and, ,, category, - -->
+  <fusions unique="0" /><!--  -->
+  <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
+  <tags unique="16">
+    <tag name="ADJ">851</tag><!-- categorical, monoidal, abelian, such, -, many, new, non, general, boolean -->
+    <tag name="ADP">809</tag><!-- of, in, to, for, on, by, with, between, under, from -->
+    <tag name="ADV">159</tag><!-- also, well, eventually, here, only, more, always, then, together, however -->
+    <tag name="AUX">321</tag><!-- be, can, will, do, may, have, suggest, could, would -->
+    <tag name="CCONJ">94</tag><!-- and, but, or, nor, either -->
+    <tag name="DET">861</tag><!-- the, a, this, an, these, some, no, every, such, any -->
+    <tag name="INTJ">1</tag><!-- now -->
+    <tag name="NOUN">1805</tag><!-- category, result, paper, notion, example, theory, functor, proof, graph, approach -->
+    <tag name="NUM">38</tag><!-- two, three, 3, one, 1989, 2, 20, 5.3, zero -->
+    <tag name="PART">115</tag><!-- to, not, 's -->
+    <tag name="PRON">349</tag><!-- we, there, their, which, it, that, our, this, they, both -->
+    <tag name="PROPN">151</tag><!-- Theorem, Kan, Beck, Birkhoff, Cauchy, Day, FinRelk, Galois, Janelidze, Jon -->
+    <tag name="PUNCT">740</tag><!-- ., ,, -, `, ", (, ), :, '', ' -->
+    <tag name="SCONJ">49</tag><!-- that, if, whether, as, when, while -->
+    <tag name="SPACE">10</tag><!--   -->
+    <tag name="VERB">682</tag><!-- give, define, use, have, introduce, relate, exist, be, prove, present -->
+  </tags>
+  <!-- Statistics of features and values. The comments show the most frequent word forms. -->
+  <feats unique="37">
+    <feat name="Aspect" value="Perf" upos="VERB">187</feat><!-- given, related, defined, known, triangulated, used, behaved, needed, omitted, valued -->
+    <feat name="Aspect" value="Prog" upos="VERB">48</feat><!-- using, constructing, looking, satisfying, providing, relating, resulting, Having, supplying, arising -->
+    <feat name="Case" value="Acc" upos="PRON">11</feat><!-- them, us, itself -->
+    <feat name="Case" value="Nom" upos="PRON">199</feat><!-- we, it -->
+    <feat name="ConjType" value="Cmp" upos="CCONJ">94</feat><!-- and, but, or, nor, either -->
+    <feat name="Definite" value="Def" upos="DET">307</feat><!-- the -->
+    <feat name="Definite" value="Ind" upos="DET">300</feat><!-- a, an -->
+    <feat name="Degree" value="Cmp" upos="ADJ,ADV">14</feat><!-- more, weaker, stronger -->
+    <feat name="Degree" value="Pos" upos="ADJ,ADV">861</feat><!-- categorical, monoidal, abelian, such, -, many, well, new, non, general -->
+    <feat name="Degree" value="Sup" upos="ADV">3</feat><!-- least -->
+    <feat name="Gender" value="Neut" upos="PRON">21</feat><!-- it, its, itself -->
+    <feat name="Mood" value="Ind" upos="AUX,VERB">259</feat><!-- is, are, has, have, was, do, does, were -->
+    <feat name="Number" value="Plur" upos="DET,NOUN,PRON">1093</feat><!-- we, categories, these, examples, notions, results, their, functors, properties, modules -->
+    <feat name="Number" value="Sing" upos="AUX,DET,NOUN,PRON,PROPN,VERB">1530</feat><!-- is, this, category, paper, result, theory, notion, graph, bicategory, it -->
+    <feat name="NumType" value="Card" upos="NUM">38</feat><!-- two, three, 3, one, 1989, 2, 20, 5.3, zero -->
+    <feat name="Person" value="1" upos="PRON">199</feat><!-- we, our, us -->
+    <feat name="Person" value="3" upos="AUX,PRON,VERB">302</feat><!-- is, their, it, has, exists, gives, was, implies, relies, them -->
+    <feat name="Polarity" value="Neg" upos="PART">35</feat><!-- not -->
+    <feat name="Poss" value="Yes" upos="PRON">37</feat><!-- their, our, its -->
+    <feat name="PronType" value="Art" upos="DET">607</feat><!-- the, a, an -->
+    <feat name="PronType" value="Dem" upos="ADV,DET,PRON">176</feat><!-- this, these, here, that, those, then -->
+    <feat name="PronType" value="Ind" upos="PRON">6</feat><!-- anything, Nobody, anyone, someone -->
+    <feat name="PronType" value="Prs" upos="PRON">249</feat><!-- we, their, it, our, them, us, its, itself -->
+    <feat name="PronType" value="Rel" upos="PRON">12</feat><!-- that -->
+    <feat name="PunctSide" value="Fin" upos="PUNCT">29</feat><!-- ), ", '', ' -->
+    <feat name="PunctSide" value="Ini" upos="PUNCT">53</feat><!-- `, (, " -->
+    <feat name="PunctType" value="Brck" upos="PUNCT">28</feat><!-- (, ) -->
+    <feat name="PunctType" value="Comm" upos="PUNCT">77</feat><!-- , -->
+    <feat name="PunctType" value="Dash" upos="PUNCT">29</feat><!-- - -->
+    <feat name="PunctType" value="Peri" upos="PUNCT">544</feat><!-- ., .. -->
+    <feat name="PunctType" value="Quot" upos="PUNCT">54</feat><!-- `, ", '', ' -->
+    <feat name="Reflex" value="Yes" upos="PRON">1</feat><!-- itself -->
+    <feat name="Tense" value="Past" upos="AUX,VERB">213</feat><!-- given, related, defined, known, triangulated, used, was, behaved, needed, omitted -->
+    <feat name="Tense" value="Pres" upos="AUX,VERB">603</feat><!-- is, are, give, has, introduce, exists, use, present, using, define -->
+    <feat name="VerbForm" value="Fin" upos="AUX,VERB">630</feat><!-- is, are, give, can, has, will, introduce, exists, use, present -->
+    <feat name="VerbForm" value="Inf" upos="AUX,VERB">137</feat><!-- be, define, give, prove, calculate, demonstrate, produce, determine, characterise, coproduct -->
+    <feat name="VerbForm" value="Part" upos="AUX,VERB">236</feat><!-- given, related, defined, known, triangulated, using, used, behaved, needed, omitted -->
+  </feats>
+  <!-- Statistics of universal dependency relations. -->
+  <deps unique="43">
+    <dep name="ROOT">558</dep>
+    <dep name="acl">41</dep>
+    <dep name="acomp">66</dep>
+    <dep name="advcl">44</dep>
+    <dep name="advmod">167</dep>
+    <dep name="agent">20</dep>
+    <dep name="amod">811</dep>
+    <dep name="appos">20</dep>
+    <dep name="attr">102</dep>
+    <dep name="aux">129</dep>
+    <dep name="auxpass">103</dep>
+    <dep name="case">19</dep>
+    <dep name="cc">93</dep>
+    <dep name="ccomp">28</dep>
+    <dep name="compound">221</dep>
+    <dep name="conj">92</dep>
+    <dep name="csubj">3</dep>
+    <dep name="dative">1</dep>
+    <dep name="dep">10</dep>
+    <dep name="det">852</dep>
+    <dep name="dobj">384</dep>
+    <dep name="expl">27</dep>
+    <dep name="intj">1</dep>
+    <dep name="mark">51</dep>
+    <dep name="meta">1</dep>
+    <dep name="neg">36</dep>
+    <dep name="nmod">12</dep>
+    <dep name="npadvmod">14</dep>
+    <dep name="nsubj">511</dep>
+    <dep name="nsubjpass">107</dep>
+    <dep name="nummod">32</dep>
+    <dep name="oprd">10</dep>
+    <dep name="pcomp">21</dep>
+    <dep name="pobj">784</dep>
+    <dep name="poss">50</dep>
+    <dep name="preconj">1</dep>
+    <dep name="predet">9</dep>
+    <dep name="prep">779</dep>
+    <dep name="prt">7</dep>
+    <dep name="punct">736</dep>
+    <dep name="quantmod">1</dep>
+    <dep name="relcl">38</dep>
+    <dep name="xcomp">43</dep>
+  </deps>
+</treebank>

@@ -66,3 +66,27 @@ This should generate an output with a sequence of CoNLL representations of the s
 11	theory	theory	NOUN	NN	Number=Sing	9	pobj	_	SpaceAfter=No
 12	.	.	PUNCT	.	PunctType=Peri	2	punct	_	SpaceAfter=No
 ```
+
+## Analysis
+
+To run the script `conllu-stats.pl` provided by the Universal Dependencies folk, do the following:
+
+Download the script and dependencies from their Github repository:
+
+```
+$ curl -LO https://github.com/UniversalDependencies/tools/raw/master/conllu-status.pl
+$ curl -LO https://github.com/UniversalDependencies/tools/raw/master/udlib.pm
+```
+
+Make sure you have the appropriate Perl libraries installed. Maybe this can help:
+
+```
+# cpan install JSON::Parse
+# cpan install YAML
+```
+
+Finally, run the script:
+
+```
+$ perl conllu-stats.pl treebank.conll > stats.xml
+```
