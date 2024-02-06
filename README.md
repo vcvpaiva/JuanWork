@@ -90,3 +90,16 @@ Finally, run the script:
 ```
 $ perl conllu-stats.pl treebank.conll > stats.xml
 ```
+
+# Verb counts
+
+The script `verbs.sh` extracts VERBs with frequencies from a CoNLL-U file.
+
+```
+$ ./verbs.sh < data/treebank.conll > data/verbs.tsv
+```
+
+Is a shell script ideal? Yes. Or no. Depends. For simple, one-shot tasks,
+it's better than an Industrial Strength Codebase™. Eventually, we'll
+have a scaffolding with CoNLL-U parsers, and then it'll be easier to do
+it from inside that program.
