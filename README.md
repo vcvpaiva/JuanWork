@@ -103,3 +103,7 @@ Is a shell script ideal? Yes. Or no. Depends. For simple, one-shot tasks,
 it's better than an Industrial Strength Codebase™. Eventually, we'll
 have a scaffolding with CoNLL-U parsers, and then it'll be easier to do
 it from inside that program.
+
+# Compounds
+
+The script `compounds.lua` extracts all of the compounds from the data passed into `stdin`.
