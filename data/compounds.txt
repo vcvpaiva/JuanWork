@@ -1,61 +1,61 @@
-Kan complexes
-product measures
+Kan complex  https://www.wikidata.org/wiki/Q109012778
+product measure  https://www.wikidata.org/wiki/Q1572094
 *globular satisfy*
-descent theory
-factorization system
-Hausdorff space
+descent theory  
+factorization system  https://www.wikidata.org/wiki/Q5428747
+Hausdorff space  https://www.wikidata.org/wiki/Q326908
 presentation theory
 *category C*
 Clifford sequence
 affine arithmetic
 identity functor
 *product measures yields*
-Lie groupoid
-Lie groups
-computer program
-restriction categories
+Lie groupoid  https://www.wikidata.org/wiki/Q6543824
+Lie group  https://www.wikidata.org/wiki/Q622679
+*computer program*
+restriction category
 *category C//G*
 basal graph
-graph theory
+graph theory  https://www.wikidata.org/wiki/Q131476
 *Symbolic dynamics*
-*i. E*
+*i. E* TYPO
 homotopy orthogonality
 Day Reflection Theorem
-companion paper
+*companion paper*
 surface holonomy
-Kan complex
+*Kan complex*
 *Wiring diagrams*
-Hecke algebras
-monoidal category
-tensor products
+Hecke algebra  https://www.wikidata.org/wiki/Q48970267
+monoidal category  https://www.wikidata.org/wiki/Q1945014
+tensor product  https://www.wikidata.org/wiki/Q1163016
 *factorization systems*
 quasigroups isotopies
 Kan condition
-Product measures
+*Product measures*
 coproduct preservation
 Galois descent theory
 *category B*
-Galois theory
-vector field
-Hall algebras
+Galois theory  https://www.wikidata.org/wiki/Q92552
+vector field  https://www.wikidata.org/wiki/Q186247
+Hall algebra  https://www.wikidata.org/wiki/Q5642657
 *nerve satisfy*
-Jon Beck
-Arakelov compactifications
+*Jon Beck*
+Arakelov compactification
 *base field*
-Vector fields
+*Vector fields*
 state space
 *approximation results*
 braid structure
 *Day Theorem*
-probability theory
-mutation pairs
+probability theory  https://www.wikidata.org/wiki/Q5862903
+mutation pair
 *A. Kock*
-measures yields
+*measures yields*
 *Reflection Theorem*
 globular nerve
 *V categories*
 skew system
-nerve satisfies
-wiring diagrams
-Cauchy filters
-Variety Theorem
+*nerve satisfies*
+wiring diagram
+Cauchy filter
+*Variety Theorem*
