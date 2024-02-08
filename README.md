@@ -8,7 +8,7 @@ for the sentences/pairs in  https://github.com/vcvpaiva/MathNLI2024-/blob/main/g
 Second, we want to create Enhanced UDs for this corpus. We can adapt one of the English models.
 
 We also need to investigate the quality of the CONLLU that we've got.
-For instance, looking at stats.txt we see that we have 10 "dep" dependencies, this is simply a way of UD saying they don't know what's going on.
+
 The compounds (61 in total out of 221 mentioned by stats) show that "satisfies/yields" are being considered nouns at least 5 times, which is an error.
 
 ## Bootstrapping
