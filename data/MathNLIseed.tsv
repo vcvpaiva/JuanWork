@@ -22,7 +22,7 @@
 22	A proof of this corollary is given without details.	There exists a proof of this corollary.	E
 23	A proof of this corollary is given without details.	There is no proof of this corollary without details.	C
 24	A proof of this corollary is given without details.	A proof of this corollary is given without a computer program.	N
-25	Here ``balanced'' can be omitted if the category is additive.	For additive categories ``balanced" can be omitted here.	E
+25	Here ``balanced'' can be omitted if the category is additive.	For additive categories ``balanced'' can be omitted here.	E
 26	Here ``balanced'' can be omitted if the category is additive.	Here ``balanced'' cannot be omitted if the category is additive.	C
 27	Here ``balanced'' can be omitted if the category is additive.	Here ``balanced'' can be omitted if the category is multiplicative.	N
 28	We introduce the notion of mutation pairs in pseudo-triangulated categories.	We introduce the notion of mutation pairs.	E
