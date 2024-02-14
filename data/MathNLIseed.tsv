@@ -226,9 +226,9 @@
 226	The second application is to Hecke algebras.	The second application involves some algebras.	E
 227	The second application is to Hecke algebras.	Only one application exists.	C
 228	The second application is to Hecke algebras.	Hall algebras can also be an application.	N
-229	The ``if" directions fail for semi-abelian varieties.	The ``if" directions cannot be proved for semi-abelian varieties.	E
-230	The ``if" directions fail for semi-abelian varieties.	The ``if" directions can be proved for semi-abelian varieties.	C
-231	The ``if" directions fail for semi-abelian varieties.	The ``only if" directions fail for semi-abelian varieties.	N
+229	The `if' directions fail for semi-abelian varieties.	The `if' directions cannot be proved for semi-abelian varieties.	E
+230	The `if' directions fail for semi-abelian varieties.	The `if' directions can be proved for semi-abelian varieties.	C
+231	The `if' directions fail for semi-abelian varieties.	The `only if' directions fail for semi-abelian varieties.	N
 232	We compute some simple examples and explore the elementary properties of these invariants.	We will be concerned with some properties of certain invariants.	E
 233	We compute some simple examples and explore the elementary properties of these invariants.	We compute some simple examples of these invariants, but we will not be concerned with their properties.	C
 234	We compute some simple examples and explore the elementary properties of these invariants.	We explore the elementary properties of these invariants and prove that no other invariants exist.	N
