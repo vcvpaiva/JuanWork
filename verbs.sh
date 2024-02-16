@@ -1,9 +1,9 @@
 #!/bin/sh
 
 grep -v '^#' |
-grep -v '^[:space:]*$' |
+grep -v '^[[:space:]]*$' |
 while read ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC; do
-	[ "$UPOS" = "VERB" ] && echo "$FORM"
+	[ "$UPOS" = "VERB" -a "$DEPREL" != "amod" ] && echo "$LEMMA"
 done |
 sort |
 uniq -c |
