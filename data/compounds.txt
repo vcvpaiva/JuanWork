@@ -1,14 +1,14 @@
 Kan complex  https://www.wikidata.org/wiki/Q109012778
 product measure  https://www.wikidata.org/wiki/Q1572094
-*globular satisfy*
-descent theory  
+*globular satisfy* processing error
+descent theory   should be a concept?
 factorization system  https://www.wikidata.org/wiki/Q5428747
 Hausdorff space  https://www.wikidata.org/wiki/Q326908
-presentation theory
-*category C*
+presentation theory should be a concept?
+*category C* processing error
 Clifford sequence
-affine arithmetic
-identity functor
+affine arithmetic 
+identity functor should be a concept?
 *product measures yields*
 Lie groupoid  https://www.wikidata.org/wiki/Q6543824
 Lie group  https://www.wikidata.org/wiki/Q622679
@@ -18,7 +18,7 @@ restriction category
 basal graph
 graph theory  https://www.wikidata.org/wiki/Q131476
 *Symbolic dynamics*
-*i. E* TYPO
+*i. E* TYPO corrected
 homotopy orthogonality
 Day Reflection Theorem
 *companion paper*
