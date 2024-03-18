@@ -3,7 +3,7 @@
 3	We use a number of interesting categories related to probability theory.	There are no interesting categories related to topology.	N
 4	A notion of central importance in categorical topology is that of topological functor.	Topological functor is a notion of categorical topology.	E
 5	A notion of central importance in categorical topology is that of topological functor.	There are no notions of importance in categorical topology.	C
-6	A notion of central importance in categorical topology is that of topological functor.	There are many  notions of central importance in categorical topology.	N
+6	A notion of central importance in categorical topology is that of topological functor.	There are many notions of central importance in categorical topology.	N
 7	In the nilpotent case, this nerve is known to be a Kan complex.	There are nerves that are Kan complexes.	E
 8	In the nilpotent case, this nerve is known to be a Kan complex.	In the nilpotent case, this nerve is not known to be a Kan complex.	C
 9	In the nilpotent case, this nerve is known to be a Kan complex.	This nerve is not known to be a Kan complex.	N
@@ -256,9 +256,9 @@
 256	We give a new proof of the fact that every topos is adhesive.	We give a proof that each topos is adhesive.	E
 257	We give a new proof of the fact that every topos is adhesive.	We give a new proof that every topos is non-adhesive.	C
 258	We give a new proof of the fact that every topos is adhesive.	The old proof of the fact that every topos is adhesive had gaps.	N
-259	We compare various different definitions of "the category of smooth objects".	We have several definitions of "the category of smooth objects".	E
-260	We compare various different definitions of "the category of smooth objects".	No one has given a definition of "the category of smooth objects".	C
-261	We compare various different definitions of "the category of smooth objects".	No one has given a definition of "the bicategory of smooth objects".	N
+259	We compare various different definitions of `the category of smooth objects'.	We have several definitions of `the category of smooth objects'.	E
+260	We compare various different definitions of `the category of smooth objects'.	No one has given a definition of `the category of smooth objects'.	C
+261	We compare various different definitions of `the category of smooth objects'.	No one has given a definition of `the bicategory of smooth objects'.	N
 262	We indicate also some possible novel geometric interest in such algebras.	We suggest some novel geometric interest in such algebras.	E
 263	We indicate also some possible novel geometric interest in such algebras.	We fail to see any possible geometric interest in such algebras.	C
 264	We indicate also some possible novel geometric interest in such algebras.	We suggest some novel geometric interest in such coalgebras.	N
