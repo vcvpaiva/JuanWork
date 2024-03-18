@@ -1,0 +1,131 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{framed}
+\usepackage{hyperref}
+
+\usepackage{fontspec}
+	\setmainfont{EB Garamond}
+
+\usepackage{polyglossia}
+	\setmainlanguage{english}
+
+\usepackage{biblatex}
+
+\usepackage{tikz}
+	\usetikzlibrary{graphs}
+	\usetikzlibrary{quotes}
+
+\newcommand \rewriterule [3] {
+	\begin{samepage}
+	\begin{framed}
+	\label{#1}
+	\textsf{#1}
+	\begin{displaymath}
+		\vcenter{
+			\hbox{
+				\begin{tikzpicture}
+					\graph[grow right=50pt] { #2 } ;
+				\end{tikzpicture}
+			}
+		} \implies \vcenter{
+			\hbox{
+				\begin{tikzpicture}
+					\graph[grow right=50pt] { #3 } ;
+				\end{tikzpicture}
+			}
+		}
+	\end{displaymath}
+	\end{framed}
+	\end{samepage}
+}
+
+\title{Graph rewritings}
+\author{}
+\date{}
+
+\begin{document}
+
+    \maketitle
+
+	\section{Rules}
+
+	This are the rewrite rules presented in
+	\textcite{SchusterEnhanced2016} for the Enhanced UD
+	representations. They are represented as patterns in graphs,
+	somewhat informally. Later, we'll discuss what it takes to
+	formalize them.
+
+	\rewriterule {augmented-modifiers} {
+		a ->["\texttt{nmod}"] b ->["\texttt{case}"] c
+	} {
+		a ->["\texttt{nmod:}c"] b ->["\texttt{case}"] c
+	}
+
+	\rewriterule {augmented-conjuncts} {
+		a ->["\texttt{cc}"] b ;
+		a ->["\texttt{conj}"'] c ;
+	} {
+		a ->["\texttt{cc}"] b ;
+		a ->["\texttt{conj:}b"'] c ;
+	}
+
+	\textbf{Note:} this one has an additional condition; that if
+	two \texttt{cc} relations come out of the same node, the one
+	that's used is the one whose target precedes $\mathrm{c}$, or
+	the first one to appear if none do (cf. the source of CoreNLPP, at
+	\texttt{src/edu/stanford/nlp/trees/UniversalEnglishGrammaticalStructure.java:720}
+	in the commit \texttt{3499d27e615c35702f23948e886a7389b5695c33}:
+	``In case multiple coordination marker[s] depend on the same
+	governor[,] the one that precedes the conjunct is appended to the
+	conjunction relation or the first one if no preceding marker
+	exists.''). Importantly, this means \emph{sentence word order is
+	still relevant at this stage}. So we should consider a graph for
+	that order as well, and our language will have to be enhanced
+	to account for such conditions.
+
+	\rewriterule {propagate-governors-and-dependents} {
+		h ->["r $\in$ (\texttt{nsubj}|\texttt{amod})"] a ;
+		a ->["\texttt{conj:}x"] b ;
+	} {
+		{
+			h ->["r"] {a , b} ;
+			a ->["\texttt{conj:}x"] b
+		}
+	}
+
+	(Not complete; case for verbs is missing)
+
+	\rewriterule {subjects-of-controlled-verbs} {
+		s <-["\texttt{nsubj}"] v ->["\texttt{xcomp}"] c
+	} {
+		{
+			s <-["\texttt{nsubj}"] v ->["\texttt{xcomp}"] c ,
+			s <-["\texttt{nsubj:xsubj}"', bend right] c
+		}
+	}
+
+	\section{Formalization}
+
+	The graph rewriting rules presented by Schuster are apparently just pairs of graphs. But there's more to it. For one, there's a matter of binding: variables in the right-hand side (RHS) of the rules are \emph{references}, whereas the ones in the left-hand side (LHS) are \emph{introductions}. That is, the intended semantics of the rule requires us to pattern-match the LHS to subgraphs of an argument sentence, and then replace it with the RHS with the corresponding variables replaced by the values bound to them by the matching.
+	
+	Besides, there's the matter of additional conditions not expressible, apparently, as graph matching. Look at \hyperref[augmented-conjuncts]{\textsf{augmented-conjuncts}}; there, there's a restriction so that the pattern can only match the closest node connected to $a$ via $\texttt{cc}$ is the one that's used.
+
+% {}=gov  [>conj ({}=conj >cc {}=cc) |  >conj ({} >cc {}=cc) >conj {}=conj ]
+
+%      conj         cc
+% gov ------> conj ----> cc
+%
+%     or
+%
+%      conj      cc
+% gov ------> _ ----> cc
+%  \
+%   `------> conj
+%     conj
+%
+
+
+\end{document}
