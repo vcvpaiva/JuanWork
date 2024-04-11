@@ -18,6 +18,20 @@ the graph of contexts found in the sentence.
 
 ## Iter 0
 
+- [2024-04-09] The concept graph is a formal object derived from a
+  parsing of a sentece, and it is based on the so-called Neo-Davidsonian
+  Semantics. Somehow, this is related to some discussions by Montague (and
+  higher-order logic), which, when diluted so as to be computationally
+  tractable, lands us somewhere near Description Logic. This is
+  Valéria's TIL.
+
+Tasks:
+
+- Lookup Neo-Davidsonian Existence
+- Lookup a more complete description of the TIL logic.
+- Lookup the paper on Preventing Existence
+- Lookup the researcher Aarne Ranta
+
 Goals:
 
 - [ ] Write down the concept generation as a series of graph rewritings.
