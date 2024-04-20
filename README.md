@@ -45,6 +45,7 @@ In this last case, you should adapt how you run python scripts to use the enviro
 
 - `spacy`
 - `spacy_conll`
+- also use the stats script to produce a summary of the data
 
 4. Run the converter
 
