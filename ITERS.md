@@ -25,6 +25,35 @@ the graph of contexts found in the sentence.
   tractable, lands us somewhere near Description Logic. This is
   Valéria's TIL.
 
+- [2024-04-23] Reading the following document: [The Packed Rewriting System](https://ling.sprachwiss.uni-konstanz.de/pages/xle/doc/transfer-manual.html).
+  As I understand it, (this part of) XLE took one Prolog representation
+  of F-structures, which are DAGs that represent gramatical content of
+  sentences, and rewrote them into another representation more suitable
+  for rewritings. *More suitable* because in the latter, all the bits of
+  information of the F-structure are exploded into different prolog facts,
+  so they can be attacked individually without resorting to tree traversal.
+
+  The rewrites, written in a DSL, are then able to modify individual
+  aspects of the original sentence (including presentation; i.e., not
+  only semantic content). The resulting facts can then be re-encoded into
+  the prior F-structure representation, which can then be reconstructed
+  as a sentence.
+
+- I think Natural Semantic Metalanguage has something to offer regarding
+  the roles in TIL. This addresses a specific concern in DePaivaLogic2017;
+  explicitly:
+
+  > We have discussed ways of augmenting the number of roles of VerbNet
+  > (from less than twenty) to a reasonable number, presumably much less
+  > than the 400 that cyc has, but have found that a daunting task,
+  > so we are still exploring possibilities. Roles in our system are
+  > supposed to support inference and at the same time are supposed
+  > to make the mapping from language feasible. For the latter purpose
+  > (mapping from language feasibly) VerbNet roles are well-suited, but
+  > they are too underspecified to help with inference. The quest is on
+  > to find a collection of roles that keeps feasibility of the mapping,
+  > but improves the inferential capabilities.
+
 Tasks:
 
 - Lookup Neo-Davidsonian Existence
