@@ -6,8 +6,11 @@ First, we want to create representations,  in CNLL-U format (https://universalde
 for the sentences/pairs in  https://github.com/vcvpaiva/MathNLI2024-/blob/main/gold-final-0116.txt.
 
 Second, we want to create Enhanced UDs for this corpus. We can adapt one of the English models.
+(These are described in `Enhanced English Universal Dependencies: An Improved Representation for Natural Language Understanding 
+Tasks', Schuster and Manning, https://aclanthology.org/L16-1376/).
 
-We also need to investigate the quality of the CONLLU that we've got.
+
+Thirdly, we also need to investigate the quality of the CONLLU that we've got.
 
 The compounds (61 in total out of 221 mentioned by stats) show that "satisfies/yields" are being considered nouns at least 5 times, which is an error.
 
@@ -45,6 +48,7 @@ In this last case, you should adapt how you run python scripts to use the enviro
 
 - `spacy`
 - `spacy_conll`
+- (we also use the stats script to produce a summary of the data, see below)
 
 4. Run the converter
 
