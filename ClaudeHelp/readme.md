@@ -2,6 +2,7 @@ Seeing if Claude can do the `translation' of GKR into spacy+python.
 
 the proposed structure:
 
+```
 gkr_semantic_parser_py/
 ├── pyproject.toml
 ├── README.md
@@ -55,3 +56,4 @@ gkr_semantic_parser_py/
     ├── test_dep_graph_mapping.py
     └── fixtures/
         └── sample_sentences.txt
+'''
